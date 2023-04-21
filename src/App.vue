@@ -16,6 +16,8 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+    <AppHeader />
+</template>
 
 <style lang="scss"></style>
