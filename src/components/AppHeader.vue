@@ -78,6 +78,8 @@ export default {
 </template>
 
 <style scoped lang="scss">
+$header-text: #464646;
+
 header {
     height: 100px;
     width: 100%;
@@ -114,7 +116,7 @@ header {
                         font-weight: bold;
                         font-size: 0.7rem;
                         text-transform: uppercase;
-                        color: #464646;
+                        color: $header-text;
                     }
                 }
             }

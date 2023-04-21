@@ -4,6 +4,18 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+    <section class="content">
 
-<style></style>
+    </section>
+</template>
+
+<style scoped lang="scss">
+$content-background: #1C1C1C;
+
+.content {
+    height: 100px;
+    width: 100%;
+    background-color: $content-background;
+}
+</style>
