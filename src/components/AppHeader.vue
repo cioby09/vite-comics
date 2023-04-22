@@ -83,11 +83,12 @@ $header-text: #464646;
 header {
     height: 100px;
     width: 100%;
+    padding: 0 1rem;
     background-color: white;
 
     .container {
         height: 100%;
-        width: 800px;
+        max-width: 800px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -113,8 +114,8 @@ header {
 
                     a {
                         text-decoration: none;
-                        font-weight: bold;
-                        font-size: 0.7rem;
+                        font-weight: 700;
+                        font-size: 0.6rem;
                         text-transform: uppercase;
                         color: $header-text;
                     }

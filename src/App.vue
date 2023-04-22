@@ -1,7 +1,7 @@
 <script>
 import AppHeader from "./components/AppHeader.vue"
 import AppContent from "./components/AppContent.vue"
-import AppPagesNav from "./components/AppPagesNav.vue"
+import AppSubpages from "./components/AppSubpages.vue"
 import AppFooter from "./components/AppFooter.vue"
 import AppSocialFooter from "./components/AppSocialFooter.vue"
 
@@ -9,7 +9,7 @@ export default {
     components: {
         AppHeader,
         AppContent,
-        AppPagesNav,
+        AppSubpages,
         AppFooter,
         AppSocialFooter
     }
@@ -19,6 +19,7 @@ export default {
 <template>
     <AppHeader />
     <AppContent />
+    <AppSubpages />
 </template>
 
 <style lang="scss"></style>
