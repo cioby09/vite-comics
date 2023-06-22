@@ -20,6 +20,7 @@ export default {
     <AppHeader />
     <AppContent />
     <AppSubpages />
+    <AppFooter />
 </template>
 
 <style lang="scss"></style>
