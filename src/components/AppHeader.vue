@@ -64,12 +64,14 @@ export default {
     <header>
         <div class="container">
             <div class="logo">
-                <img src="../assets/dc-logo.png" alt="">
+                <a href="/">
+                    <img src="../assets/dc-logo.png" alt="">
+                </a>
             </div>
             <nav class="nav-bar">
                 <ul>
                     <li v-for="link in links" :class="link.current ? 'active' : ''">
-                        <a href="link.url">{{ link.text }}</a>
+                        <a :href="link.url">{{ link.text }}</a>
                     </li>
                 </ul>
             </nav>

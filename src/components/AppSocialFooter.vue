@@ -8,7 +8,7 @@ export default {
     <div class="appSocialFooter">
         <div class="container">
                 <div class="signup-button">
-                    <a href="" type="button">SIGN-UP NOW!</a>
+                    <a href="">SIGN-UP NOW!</a>
                 </div>
                 <div class="social-links">
                     <ul>
