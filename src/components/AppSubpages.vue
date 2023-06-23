@@ -45,7 +45,7 @@ export default {
         <div class="container">
             <ul>
                 <li v-for="element in subpage">
-                    <a href="img.url">
+                    <a :href="getImagePath(element.img)">
                         <img :src="getImagePath(element.img)" alt="">
                         <p>{{ element.text }}</p>
                     </a>

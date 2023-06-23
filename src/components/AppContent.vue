@@ -1,9 +1,13 @@
 <script>
+import AppCard from "./AppCard.vue";
 export default {
     name: "AppContent",
+    components: {
+        AppCard
+    },
     data() {
         return {
-            superherocards: [
+            comics: [
                 {
                     thumb: 'https://www.coverbrowser.com/image/action-comics/1-1.jpg',
                     price: '$19.99',
@@ -78,6 +82,11 @@ export default {
                 },
             ]
         }
+    },
+    methods: {
+        getImage(element) {
+            return new URL(`../img/${element.images}`, import.meta.url).href;
+        }
     }
 }
 </script>
@@ -88,10 +97,14 @@ export default {
             <img src="../assets/jumbotron.jpg" alt="">
         </div>
         <div class="top-button">
-            <a href="" type="button">CURRENT SERIES</a>
+            <a href="">CURRENT SERIES</a>
         </div>
-        <div class="cards">
-
+        <div class="cards row">
+            <AppCard v-for="comic in comics" :key="index" :thumb="comic.thumb"
+                    :series="comic.series" />
+            <div class="load-button">
+                <a href="">LOAD MORE</a>
+            </div>
         </div>
     </section>
 </template>
@@ -130,7 +143,22 @@ $button-background: #0282F9;
         }
     }
     .cards {
-        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 800px;
+        margin-top: 40px;
+        .load-button {
+            margin: 1.5rem auto;
+            a {
+            padding: 8px 50px;
+            border: none;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.7rem;
+            background-color: $button-background;
+            color: white;
+            }
+        }
     }
 }
 </style>
