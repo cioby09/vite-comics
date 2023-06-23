@@ -4,7 +4,7 @@ export default {
     data() {
         return {
             ComicLink: ["Character", "Comics", "Movies", "TV", "Games", "Videos", "News"],
-            ShopLink: ["Shod DC", "Shop DC Collectilbles"],
+            ShopLink: ["Shop DC", "Shop DC Collectilbles"],
             DCLink: ["Terms Of Use", "Privacy Policy (New)", "Ad Choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshop", "CPSC Certificates", "Ratings", "Shop Help", "Contact Us"],
             SitesLink:["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"]
 
@@ -20,23 +20,39 @@ export default {
                 <div class="list">
                     <h4 class="list-title">DC COMICS</h4>
                     <ul v-for="(element, index) in ComicLink">
-                        <li>{{ element }}</li>
+                        <li>
+                            <a href="">
+                                {{ element }}
+                            </a>
+                        </li>
                     </ul>
                     <h4 class="list-title">SHOP</h4>
                     <ul v-for="(element, index) in ShopLink">
-                        <li>{{ element }}</li>
+                        <li>
+                            <a href="">
+                                {{ element }}
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="list">
                     <h4 class="list-title">DC</h4>
                     <ul v-for="(element, index) in DCLink">
-                        <li>{{ element }}</li>
+                        <li>
+                            <a href="">
+                                {{ element }}
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="list">
                     <h4 class="list-title">SITES</h4>
                     <ul v-for="(element, index) in SitesLink">
-                        <li>{{ element }}</li>
+                        <li>
+                            <a href="">
+                                {{ element }}
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -71,9 +87,12 @@ export default {
                     padding-left: 0;
                     li {
                         font-size: 0.6rem;
-                        color: rgba(164, 164, 164, 0.658);
                         list-style: none;
                         padding: 0.1rem 0;
+                        a {
+                            text-decoration: none;
+                            color: rgba(164, 164, 164, 0.658);
+                        }
                     }
                 }
             }

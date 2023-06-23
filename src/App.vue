@@ -21,6 +21,7 @@ export default {
     <AppContent />
     <AppSubpages />
     <AppFooter />
+    <AppSocialFooter />
 </template>
 
 <style lang="scss"></style>
