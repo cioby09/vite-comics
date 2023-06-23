@@ -106,13 +106,21 @@ header {
 
         .nav-bar {
             margin: 0;
+            line-height: 100px;
 
             ul {
                 display: flex;
                 gap: 1rem;
 
                 li {
+                    display: flex;
                     list-style: none;
+
+                    &.active,
+                    &:hover {
+                        border-bottom: 3px solid #0282F9;
+                        height: 100px;
+                    }
 
                     a {
                         text-decoration: none;

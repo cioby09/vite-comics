@@ -59,6 +59,8 @@ export default {
 $subpage-background: #0282F9;
 
 .subpages {
+    position: relative;
+    z-index: 1;
     height: 120px;
     width: 100%;
     padding: 0 1rem;
